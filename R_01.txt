@@ -1,0 +1,13 @@
+ii <-which(x%/%10 > 0)
+print(ii)
+xs <-rep(0,length(ii)+length(x))
+print(xs)
+iis <-ii+1:length(ii) - 1
+print(iis)
+xs[iis] <-x[ii]%/%10
+print(xs)
+print(xs[-iis])
+xs[-iis] <-x%%10
+print(xs[-iis])
+print(xs)
+
